@@ -8,6 +8,11 @@ public class Person {
         this.lastName = lastName;
     }
 
+    @Override
+    public String toString() {  //included to use the override in the employee with the super
+        return firstName + " " + lastName;
+    }
+
     public String getFirstName() {
         return firstName;
     }
@@ -16,9 +21,9 @@ public class Person {
         return lastName;
     }
 
-    private double getHeight(){
+    public double getHeight(){
         return height;
-    }
+    }  //changed to public so it can be accessed outside
 
     public void setFirstName(String firstName){
         this.firstName = firstName;
@@ -28,8 +33,8 @@ public class Person {
         this.lastName = lastName;
     }
 
-    private void setHeight(double height){
+    public void setHeight(double height){
         this.height=height;
-    }
+    } //changed to public so it can be accessed outside
 
 }
